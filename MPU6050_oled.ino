@@ -41,7 +41,9 @@ void loop() {
 
   display.clearDisplay();
   display.setCursor(0,0);
+  
 
+ // You can also change the code for displaying accelerometer, gyro and temperature by removing the comment (/*) sign bellow
  /* Serial.print("Accelerometer ");
   Serial.print("X: ");
   Serial.print(a.acceleration.x, 1);
@@ -84,7 +86,8 @@ void loop() {
   display.print("It's Hot ");
   display.write(1);
   display.print("  ");
-  display.print(temp.temperature);display.print(" C");
+  display.print(temp.temperature);
+  display.print(" C");
 
   display.display();
   delay(150);

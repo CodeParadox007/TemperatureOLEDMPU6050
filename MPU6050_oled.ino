@@ -8,7 +8,7 @@ Adafruit_SSD1306 display = Adafruit_SSD1306(128, 32, &Wire);
 void setup() {
   Serial.begin(115200);
   // while (!Serial);
-  Serial.println("MPU6050 OLED demo");
+  Serial.println("MPU6050 OLED ");
 
   if (!mpu.begin()) {
     Serial.println("Sensor init failed");
